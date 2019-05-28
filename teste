@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <conio2.h>
+#include <stdlib.h>
+#include <windows.h>
+#define LIMITE_COBRA 10
+#define CIMA 80
+#define BAIXO 72
+#define DIREITA 77
+#define ESQUERDA 75
+#define ESC 27
+
+typedef struct {
+    int x;
+    int y;
+} COORDENADA;
+
+//movimenta_snake {int snake[2][LIMITE_COBRA], COORDENADA prox_pos, int tam_atual, int booleano}
+int main()
+{
+    char seta;
+    char vai_para = 'd';
+    COORDENADA snake[LIMITE_COBRA];
+    int tam_cobra = 5;
+    int x, i;
+
+        snake[0].x = 3;
+        snake[0].y = 7;
+
+        snake[1].x = 4;
+        snake[1].y = 7;
+
+
